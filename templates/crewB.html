@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagecontents %}
+<div class="crew-page">
+    <div class="destination-content">
+        <div class="dest-num"><span id="num">02</span> MEET YOUR CREW</div>
+        
+        <div class="crew-content">
+            <div class="crew-info">
+                <div class="general-info">
+                    <p class="position">MISSION SPECIALIST</p>
+                    <p class="crew-name">MARK<br>SHUTTLEWORTH</p>
+                    <p class="letsface">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                </div>
+                <div>
+                <a href="{{ url_for('crewCommander') }}"><div class="pagination"></div></a>
+                <a href="{{ url_for('crewMission') }}"><div class="pagination active"></div></a>
+                <a href="{{ url_for('crewPilot') }}"><div class="pagination"></div></a>
+                <a href="{{ url_for('crewEngineer') }}"><div class="pagination"></div></a>
+                </div>
+            </div>
+
+            <div class="commander-pic">
+                <img src="/mark.png" class="crew-pic">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block pagecontents %}
+    <div class="content-planets">
+        <!-- <div style="height: 50%;"></div> -->
+        <div class="destination-content">
+            <div class="dest-num"><span id="num">01</span> PICK YOUR DESTINATION</div>
+
+            <div class="planet-content">
+               <div class="planet-image">
+                   <img src="/moon2.png" class="maskimg">
+               </div>
+               <div class="planets-info">
+                   <div>
+                       <ul id="planet-list">
+                        <li><a href="{{ url_for('destinationA') }}">MOON</a></li>
+                        <li><a href="{{ url_for('destinationB') }}">MARS</a></li>
+                        <li><a href="{{ url_for('destinationC') }}">EUROPA</a></li>
+                        <li><a href="{{ url_for('destinationD') }}">TITAN</a></li>
+                       </ul>
+                   </div>
+                   <p class="space">MOON</p>
+                   <p class="letsface">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                   <p><hr id="planet-line"></p>
+                   <div class="num-info">
+                       <div>
+                           <p id="heading">AVG. DISTANCE</p>
+                           <p id="distance">384,400 KM</p>
+                       </div>
+                       <div style="padding-left: 5rem;">
+                           <p id="heading">EST.TRAVEL TIME</p>
+                           <p id="distance">3 DAYS</p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        
+        </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block pagecontents %}
+<div class="tech-div">
+    <div class="tech-content">
+        <div class="dest-num"><span id="num">03</span> SPACE LAUNCH 101</div>
+
+        <div class="term-div">
+            <div class="terminology">
+                <div class="num-status">
+                    <a href="{{ url_for('launchVehicle') }}" id="tech-link"><div class="num-background"><p>1</p></div></a><br>
+                    <a href="{{ url_for('spaceport') }}" id="tech-link"><div class="num-background active-tech"><p >2</p></div></a><br>
+                    <a href="{{ url_for('spaceCapsule') }}" id="tech-link"><div class="num-background"><p>3</p></div></a>
+                    <!-- <div class="num-background active"><p id="explore">1</p></div>
+                    <div class="num-background"><p id="explore">2</p></div>
+                    <div class="num-background"><p id="explore">3</p></div> -->
+                </div>
+                <div class="terminology-description">
+                    <p class="position">THE TERMINOLOGY...</p>
+                    <p class="crew-name">SPACEPORT</p>
+                    <p class="letsface">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                </div>
+            </div>
+
+            <div class="tech-pic"><img src="techB.jpg" class="tech-img"></div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+{% endblock %}

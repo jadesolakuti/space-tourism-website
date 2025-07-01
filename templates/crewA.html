@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagecontents %}
+<div class="crew-page">
+    <div class="destination-content">
+        <div class="dest-num"><span id="num">02</span> MEET YOUR CREW</div>
+        
+        <div class="crew-content">
+            <div class="crew-info">
+                <div class="general-info">
+                    <p class="position">COMMANDER</p>
+                    <p class="crew-name">DOUGLAS HURLEY</p>
+                    <p class="letsface">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+                <div>
+                    <a href="{{ url_for('crewCommander') }}"><div class="pagination active"></div></a>
+                    <a href="{{ url_for('crewMission') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewPilot') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewEngineer') }}"><div class="pagination"></div></a>
+                </div>
+            </div>
+
+            <div class="commander-pic">
+                <img src="/douglashurley.png" class="crew-pic">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

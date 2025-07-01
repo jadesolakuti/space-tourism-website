@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagecontents %}
+<div class="crew-page">
+    <div class="destination-content">
+        <div class="dest-num"><span id="num">02</span> MEET YOUR CREW</div>
+        
+        <div class="crew-content">
+            <div class="crew-info">
+                <div class="general-info">
+                    <p class="position">FLIGHT ENGINEER</p>
+                    <p class="crew-name">ANOUSHEH ANSARI</p>
+                    <p class="letsface">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+                </div>
+                <div>
+                    <a href="{{ url_for('crewCommander') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewMission') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewPilot') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewEngineer') }}"><div class="pagination active"></div></a>
+                </div>
+            </div>
+
+            <div class="commander-pic">
+                <img src="/ansari.png" class="crew-pic">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

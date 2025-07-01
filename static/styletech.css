@@ -1,0 +1,86 @@
+.tech-div{
+    flex: 1;
+    display: flex;
+    /* padding: 4rem 5rem; */
+    margin: 0;
+    height: 100%;
+    /* outline: 2px solid yellow; */
+    justify-content: flex-end;
+}
+.tech-content{
+    width: 90vw;
+    height: 90%;
+}
+.term-div{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 2vw 0;
+    justify-content: space-between;
+    /* outline: 2px solid green; */
+    height: 100%;
+}
+.terminology{
+    display: flex;
+    /* width: 50%; */
+    flex: 0 0 50%;
+    align-items: center;
+    /* outline: 2px solid red; */
+    /* justify-content: space-between; */
+    height: 51%;
+}
+.terminology-description{
+    width: 70%;
+    margin-left: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    /* outline: 2px solid yellow; */
+}
+.numstatus{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* align-items: center; */
+}
+.num-background{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+}
+.num-background:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(11, 13, 23, 1);
+}
+.tech-pic{
+    /* height: 50%; */
+    /* width: 45%; */
+    display: flex;
+    flex: 0 0 45%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    /* outline: 2px solid orangered; */
+}
+.tech-img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    /* display: block; */
+}
+.active-tech{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(11, 13, 23, 1);
+}
+#tech-link{
+    text-decoration: none;
+}

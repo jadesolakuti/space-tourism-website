@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block pagecontents %}
+    <div class="content-planets">
+        <!-- <div style="height: 50%;"></div> -->
+        <div class="destination-content">
+            <div class="dest-num"><span id="num">01</span> PICK YOUR DESTINATION</div>
+
+            <div class="planet-content">
+               <div class="planet-image">
+                   <img src="/mars.png" class="maskimg">
+               </div>
+               <div class="planets-info">
+                   <div>
+                       <ul id="planet-list">
+                           <li><a href="{{ url_for('destinationA') }}">MOON</a></li>
+                           <li><a href="{{ url_for('destinationB') }}">MARS</a></li>
+                           <li><a href="{{ url_for('destinationC') }}">EUROPA</a></li>
+                           <li><a href="{{ url_for('destinationD') }}">TITAN</a></li>
+                       </ul>
+                   </div>
+                   <p class="space">MARS</p>
+                   <p class="letsface">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                   <p><hr id="planet-line"></p>
+                   <div class="num-info">
+                       <div>
+                           <p id="heading">AVG. DISTANCE</p>
+                           <p id="distance">225 MIL. KM</p>
+                       </div>
+                       <div style="padding-left: 5rem;">
+                           <p id="heading">EST.TRAVEL TIME</p>
+                           <p id="distance">9 MONTHS</p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        
+        </div>
+{% endblock %}

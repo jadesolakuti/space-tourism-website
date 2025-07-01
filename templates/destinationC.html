@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block pagecontents %}
+    <div class="content-planets">
+        <!-- <div style="height: 50%;"></div> -->
+        <div class="destination-content">
+            <div class="dest-num"><span id="num">01</span> PICK YOUR DESTINATION</div>
+
+            <div class="planet-content">
+               <div class="planet-image">
+                   <img src="/europa.png" class="maskimg">
+               </div>
+               <div class="planets-info">
+                   <div>
+                       <ul id="planet-list">
+                           <li><a href="{{ url_for('destinationA') }}">MOON</a></li>
+                           <li><a href="{{ url_for('destinationB') }}">MARS</a></li>
+                           <li><a href="{{ url_for('destinationC') }}">EUROPA</a></li>
+                           <li><a href="{{ url_for('destinationD') }}">TITAN</a></li>
+                       </ul>
+                   </div>
+                   <p class="space">EUROPA</p>
+                   <p class="letsface">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                   <p><hr id="planet-line"></p>
+                   <div class="num-info">
+                       <div>
+                           <p id="heading">AVG. DISTANCE</p>
+                           <p id="distance">628 MIL. KM</p>
+                       </div>
+                       <div style="padding-left: 5rem;">
+                           <p id="heading">EST.TRAVEL TIME</p>
+                           <p id="distance">3 YEARS</p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        
+        </div>
+{% endblock %}

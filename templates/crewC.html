@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagecontents %}
+<div class="crew-page">
+    <div class="destination-content">
+        <div class="dest-num"><span id="num">02</span> MEET YOUR CREW</div>
+        
+        <div class="crew-content">
+            <div class="crew-info">
+                <div class="general-info">
+                    <p class="position">PILOT</p>
+                    <p class="crew-name">VICTOR GLOVER</p>
+                    <p class="letsface">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+                </div>
+                <div>
+                    <a href="{{ url_for('crewCommander') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewMission') }}"><div class="pagination"></div></a>
+                    <a href="{{ url_for('crewPilot') }}"><div class="pagination active"></div></a>
+                    <a href="{{ url_for('crewEngineer') }}"><div class="pagination"></div></a>
+                </div>
+            </div>
+
+            <div class="commander-pic">
+                <img src="/victor.png" class="crew-pic">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

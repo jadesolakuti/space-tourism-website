@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism</title>
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="icon" type="image/x-icon" href="/Subtract.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="/styledest.css">
+    <link rel="stylesheet" href="/stylecrew.css">
+    <link rel="stylesheet" href="/styletech.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        html, body{
+            padding-top: 2.5rem;
+            background-image: url("{{ url_for('static', filename=bg) }}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            color: white;
+            font-size: 16px;
+            /* max-width: 1440px; */
+            width: 100%;
+            height: 100%;
+            /* font-family: "Bellefair", serif; Use for SPACE instead*/
+            font-family: "Barlow Condensed", sans-serif;
+            /* overflow-x: hidden; */
+            display: flex;
+            flex-direction: column;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div style="padding-left:4rem;">
+        <ul class="navbar">
+            <li>
+                <ul id="line">
+                    <li><img id="logo" src="/Subtract.svg"></li>
+                    <li><hr></li>
+                </ul>
+            </li>
+            
+            <li>
+                <div id="blurbackground">
+                    
+                    <ul class="navlinks">
+                        <li><a href="{{ url_for('home_page') }}" class="active-nav">00 HOME</a> </li>
+                        <li><a href="{{ url_for('destinationA') }}">01 DESTINATION</a> </li>
+                        <li><a href="{{ url_for('crewCommander') }}">02 CREW</a> </li>
+                        <li><a href="{{ url_for('launchVehicle') }}">03 TECHNOLOGY</a> </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    {% block pagecontents %} {% endblock %}
+    
+</body>
+</html>
