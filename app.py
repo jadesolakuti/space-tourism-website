@@ -69,5 +69,5 @@ def spaceCapsule():
     return render_template('techC.html', bg=bg_image)
 
 
-if __name__ in "__main__":
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
